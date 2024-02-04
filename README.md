@@ -54,9 +54,9 @@ project_base_path
             | ...
             
       └───  images
-            | B00006M009.jpg
-            | B00006M00B.jpg
-            | B00006M6IH.jpg
+            | B00006M009.png
+            | B00006M00B.png
+            | B00006M6IH.png
             | ...
             
       └─── image_splits
