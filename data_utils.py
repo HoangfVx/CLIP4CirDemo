@@ -110,7 +110,7 @@ class FashionIQDataset(Dataset):
     def __getitem__(self, index):
         try:
             image_name = self.image_names[index]
-            image_path = server_base_path / 'fashionIQ_dataset' / 'images' / f"{image_name}.jpg"
+            image_path = server_base_path / 'fashionIQ_dataset' / 'images' / f"{image_name}.png"
             image = self.preprocess(PIL.Image.open(image_path))
             return image_name, image
 
