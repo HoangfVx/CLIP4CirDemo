@@ -322,14 +322,14 @@ def get_image(image_name: str, dim: Optional[int] = None, gt: Optional[str] = No
     get CIRR, FashionIQ or an uploaded Image
     :param image_name: image name
     :param dim: size to resize the image
-    :param gt: if 'true' the has a green border, if 'false' has a red border anf if 'none' has a tiny black border
+    :param gt: if 'true' the has a green border, if 'false' has a red border and if 'none' has a tiny black border
     """
 
     # Check whether the image comes from CIRR or FashionIQ dataset
     if image_name in cirr_name_to_relpath:  #
         image_path = server_base_path / 'cirr_dataset' / f'{cirr_name_to_relpath[image_name]}'
     elif image_name in fashion_index_names:
-        image_path = server_base_path / 'fashionIQ_dataset' / 'images' / f"{image_name}.jpg"
+        image_path = server_base_path / 'fashionIQ_dataset' / 'images' / f"{image_name}.png"
     else:  # Search for an uploaded image
         for iter_path in app.config['UPLOAD_FOLDER'].rglob('*'):
             if iter_path.name == image_name:
