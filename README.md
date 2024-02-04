@@ -1,67 +1,6 @@
-# CLIP4CirDemo
-### CLIP for Conditioned image retrieval Demo
 
-**Live Demo available [here](http://cir.micc.unifi.it:5000/)**
 
 **Training code available at [![Repo](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://github.com/ABaldrati/CLIP4Cir)**
-
-
-* [**Demo paper**](https://openaccess.thecvf.com/content/CVPR2022/papers/Baldrati_Effective_Conditioned_and_Composed_Image_Retrieval_Combining_CLIP-Based_Features_CVPR_2022_paper.pdf) at [CVPR 2022](https://cvpr2022.thecvf.com)\
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/effective-conditioned-and-composed-image/image-retrieval-on-fashion-iq)](https://paperswithcode.com/sota/image-retrieval-on-fashion-iq?p=effective-conditioned-and-composed-image)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/effective-conditioned-and-composed-image/image-retrieval-on-cirr)](https://paperswithcode.com/sota/image-retrieval-on-cirr?p=effective-conditioned-and-composed-image)
-
-
-* [**Follow-up paper**](https://openaccess.thecvf.com/content/CVPR2022W/ODRUM/papers/Baldrati_Conditioned_and_Composed_Image_Retrieval_Combining_and_Partially_Fine-Tuning_CLIP-Based_CVPRW_2022_paper.pdf) presented at [CVPR 2022](https://cvpr2022.thecvf.com) workshop [O-DRUM](https://asu-apg.github.io/odrum/)\
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/conditioned-and-composed-image-retrieval/image-retrieval-on-fashion-iq)](https://paperswithcode.com/sota/image-retrieval-on-fashion-iq?p=conditioned-and-composed-image-retrieval)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/conditioned-and-composed-image-retrieval/image-retrieval-on-cirr)](https://paperswithcode.com/sota/image-retrieval-on-cirr?p=conditioned-and-composed-image-retrieval)
-
-## Table of Contents
-
-
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-  * [Data Preparation](#data-preparation)
-  * [Feature Extraction](#feature-extraction)
-  * [Run the Demo](#run-the-demo)
-* [Demo Overview](#demo-overview)
-* [Authors](#authors)
-* [Citation](#citation)
-
-## About The Project
-
-![](images/demo-overview.png "demo-overview")
-
-This is the **official repository** of the paper [**Effective conditioned and composed image retrieval combining CLIP-based features**](https://openaccess.thecvf.com/content/CVPR2022/papers/Baldrati_Effective_Conditioned_and_Composed_Image_Retrieval_Combining_CLIP-Based_Features_CVPR_2022_paper.pdf) accepted for the [Demo Track](https://cvpr2022.thecvf.com/call-demos) at [CVPR 2022](https://cvpr2022.thecvf.com).
-
-If you are interested in Conditioned and Composed image retrieval take a look at our follow-up work [**Conditioned and composed image retrieval
-combining and partially fine-tuning CLIP-based features**](https://openaccess.thecvf.com/content/CVPR2022W/ODRUM/papers/Baldrati_Conditioned_and_Composed_Image_Retrieval_Combining_and_Partially_Fine-Tuning_CLIP-Based_CVPRW_2022_paper.pdf) accepted at [CVPR 2022](https://cvpr2022.thecvf.com) workshop [O-DRUM](https://asu-apg.github.io/odrum/)
-
-Conditioned and composed image retrieval extend CBIR systems by combining a query image with an additional text that 
-expresses the intent of the user, describing additional requests w.r.t. the visual content of the query image.
-This type of search is interesting for e-commerce applications, e.g. to develop interactive multimodal searches and chatbots.
-
-In this demo, we present an interactive system based on a combiner network, trained using contrastive learning, that 
-combines visual and textual features obtained from the OpenAI CLIP network to address conditioned CBIR. The system can
-be used to improve e-shop search engines. For example, considering the fashion domain it lets users search for dresses, 
-shirts and toptees using a candidate start image and expressing some visual differences w.r.t. its visual content, e.g. 
-asking to change color, pattern or shape. 
-
-The proposed network obtains state-of-the-art performance on the FashionIQ dataset and on the more recent CIRR dataset, 
-showing its applicability to the fashion domain for conditioned retrieval, and to more generic content considering the 
-more general task of composed image retrieval.
-
-### Built With
-* [Python](https://www.python.org/)
-* [PyTorch](https://pytorch.org/)
-* [Torchvision](https://pytorch.org/vision/stable/index.html)
-* [CLIP](https://github.com/openai/CLIP)
-* [Flask](https://flask.palletsprojects.com/en/2.0.x/)
-* [Bootstrap](https://getbootstrap.com/)
-
 
 ## Getting Started
 
